@@ -122,8 +122,8 @@ export class Home {
             const value = control.value;
             const result = isNaN(value) ? {
                 isNan: true
-            } : null;
-  
+            } : undefined;
+
             setTimeout(() => {
                 resolve(result);
             }, 1);
